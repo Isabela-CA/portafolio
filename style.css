@@ -495,7 +495,7 @@ main {
  * #competencias  
  */
 .compe {
-  margin-bottom: 35px;
+  margin-bottom: -20px;
 }
 
 .compe-title {
@@ -511,16 +511,20 @@ main {
 
 .compe-item {
   background: var(--border-gradient-onyx);
-  padding: 20px;
+  padding: 10px;
   border-radius: 14px;
   box-shadow: var(--shadow-2);
   transition: var(--transition-1);
-  height: 64px;
+  height: 75px;
+  background-image: linear-gradient(  
+        hsla(240, 4%, 23%, 0.589) 3%
+);
 }
 
 .compe-item:hover {
   transform: translateY(-5px);
-  
+  border: 1px solid  hsl(45, 100%, 72%);
+
 }
 
 .compe-content-box {
@@ -594,10 +598,13 @@ main {
 .service-item {
   position: relative;
   background: var(--border-gradient-onyx);
-  padding: 10px;
+  padding: 15px;
   border-radius: 14px;
   box-shadow: var(--shadow-2);
   z-index: 1;
+}
+.service-item:hover {
+  border: 1px solid  hsl(45, 100%, 72%);
 }
 
 .service-item::before {
@@ -1130,6 +1137,10 @@ main {
   border-radius: inherit;
   background: var(--eerie-black-1);
   z-index: -1;
+}
+
+.blog-post-item > a:hover{
+    border: 1px solid  hsl(45, 100%, 72%);
 }
 
 .blog-banner-box {
